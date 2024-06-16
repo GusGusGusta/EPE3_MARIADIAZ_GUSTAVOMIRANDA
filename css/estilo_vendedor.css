@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h6 {
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header {
+    background: url(./img/vendedor.png) no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ecf0f1;
+    margin: 0;
+}
+
+header h6 {
+    color: #bdc3c7;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+}

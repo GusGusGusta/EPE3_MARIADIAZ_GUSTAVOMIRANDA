@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/estilo_login.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>ingeso taller</h1>
-<!-- http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/index.html -->
-    <form action="login.php" method="post">
-        <label for="email">ingresa correo:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">ingresa contraseña:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Iniciar sesión">
-    </form>
+    <section>
+        <form form action="php/login.php" method="post" class="formulario">        
+            <h1>Login Taller</h1>
+            <H3>Rayito Mcqueen</H3>
+
+            <div class="inputbox">
+                <ion.icon name="user-outline"></ion.icon>
+                <input name ="email" type="email" required>
+                <label for="">usuario</label>
+            </div>
+            <div class="inputbox">
+                <ion.icon name="lock-closed-outline"></ion.icon>
+                <input name ="password" type="password" required>
+                <label for="">Contraseña</label>
+            </div>
+
+            <div class="forget">
+                <label for=""><input type="checkbox">recordar</label>
+                <a href="#">olvide contraseña</a>
+            </div>   
+          
+           <input class="styled" type="submit" value="Iniciar sesión"/> 
+           
+            <div class="register">
+                <p>no tengo cuenta <a href="#">registar</a></p>
+            </div>
+
+        </form>    
+    </section>
 </body>
 </html>
