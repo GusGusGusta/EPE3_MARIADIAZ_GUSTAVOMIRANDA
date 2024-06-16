@@ -33,13 +33,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/paginas/admin.html');
             exit();
         } else if ($tipo == 'Vendedor') {
-            header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/php/paginas/vendedor.html');
+            header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/paginas/vendedor.php');
             exit();
-        }    
         } else {
-            header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/php/paginas/general.html');
+            header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/paginas/general.php');
             exit();
         }
+    }   
     } else {
         echo "Correo o contraseña incorrectos.";
     }
