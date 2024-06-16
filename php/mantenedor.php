@@ -18,7 +18,6 @@ $resultado = $conexion->query($sql);
 
 // Verificar si hay resultados
 if ($resultado->num_rows > 0) {
-    echo '<div class="main-content">';
     echo '<h2>Productos</h2>';
     echo '<ul>';
 
@@ -28,7 +27,6 @@ if ($resultado->num_rows > 0) {
     }
 
     echo '</ul>';
-    echo '</div>';
 } else {
     echo "No se encontraron productos.";
 }

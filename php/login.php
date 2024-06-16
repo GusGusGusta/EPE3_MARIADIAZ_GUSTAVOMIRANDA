@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($email == $correo && $password == $pass){
         echo "Login exitoso. ¡Bienvenido!";
     
-        if ($tipo == 'administrador') {
+        if ($tipo == 'Administrador') {
             header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/paginas/admin.html');
             exit();
-        } else if ($tipo == 'vendedor') {
+        } else if ($tipo == 'Vendedor') {
             header('Location: http://localhost:8080/EPE3_MARIADIAZ_GUSTAVOMIRANDA/php/paginas/vendedor.html');
             exit();
         }    
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Correo o contraseña incorrectos.";
     }
-}
+
 $conexion->close();
 ?>
 
