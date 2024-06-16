@@ -10,12 +10,13 @@
 </head>
 <body>
     <div class="header">
-        <h1>MANTENEDOR DE VENTAS</h1>
+        <h1>VENDEDOR</h1>
     </div>
     <div class="wrapper">
         <nav class="sidebar">
             <h2>Navegación</h2>
-            <a href="../admin.html"><i class="fas fa-home"></i> Inicio</a> <!-- Ajusta la ruta de tu página de inicio -->
+            <a href="../paginas/vendedor.php"><i class="fas fa-home"></i> Inicio</a> <!-- Ajusta la ruta de tu página de inicio -->
+            <a href="../paginas/reporte_ven.php"><i class="fas fa-chart-bar"></i> Reportes</a>
             <a href="../index.html" class="btn btn-danger btn-sm" style="margin-top: 10px;">Cerrar Sesión</a>
         </nav> 
         <div class="main-content">

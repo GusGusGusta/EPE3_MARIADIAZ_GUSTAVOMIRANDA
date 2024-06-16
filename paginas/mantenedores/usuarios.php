@@ -1,3 +1,18 @@
+<?php
+// Verificar si hay una alerta para mostrar
+$alerta = isset($_GET['alerta']) ? $_GET['alerta'] : '';
+
+// Función para mostrar la alerta en JavaScript
+function mostrarAlerta($mensaje) {
+    echo "<script>alert('$mensaje');</script>";
+}
+
+// Mostrar la alerta si existe
+if (!empty($alerta)) {
+    mostrarAlerta($alerta);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +31,40 @@
         <nav class="sidebar">
             <h2>Navegacion</h2>
             <a href="../admin.html"><i class="fas fa-home"></i> Inicio</a> <!-- Ajusta la ruta de tu página de inicio -->
-            <a href="../index.html" class="btn btn-danger btn-sm" style="margin-top: 10px;">Cerrar Sesión</a>
+            <a href="../../index.html" class="btn btn-danger btn-sm" style="margin-top: 10px;">Cerrar Sesión</a>
         </nav> 
         <div class="main-content">
+            <div class="new-user">
+                <h2>Nuevo Usuario</h2>
+                <form action="../../php/usu/agregar_usuario.php" method="POST">
+                    <div class="form-group">
+                        <label for="rut">Run (Rol Unico Nacional)</label>
+                        <input type="text" id="rut" name="rut" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo" name="tipo" class="form-control" required>
+                            <option value="admin">Administrador</option>
+                            <option value="vendedor">Vendedor</option>
+                            <option value="Mecanico">Mecanico</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+                </form>
+            </div>
+
+            <hr>
+
             <?php
             // Incluir código PHP para conexión y consulta de usuarios
             include '../../php/conexion.php'; // Asegúrate de ajustar la ruta según tu estructura de carpetas

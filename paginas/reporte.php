@@ -22,7 +22,7 @@
     <div class="wrapper">
         <nav class="sidebar">
             <h2>Navegacion</h2>
-            <a href="../paginas/general.php"><i class="fas fa-home"></i> Inicio</a> <!-- Ajusta la ruta de tu página de inicio -->
+            <a href="../paginas/admin.html"><i class="fas fa-home"></i> Inicio</a> <!-- Ajusta la ruta de tu página de inicio -->
             <a href="../index.html" class="btn btn-danger btn-sm" style="margin-top: 10px;">Cerrar Sesión</a>
         </nav> 
         <div class="main-content">

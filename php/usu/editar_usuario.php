@@ -62,7 +62,7 @@ $usuario = $resultado->fetch_assoc();
     <?php if (isset($mensaje)): ?>
     <script>
         alert('<?php echo $mensaje; ?>');
-        window.location.href = '../../paginas/mantenedores/repuestos.php';
+        window.location.href = '../../paginas/mantenedores/usuarios.php';
     </script>
     <?php endif; ?>
 </body>
