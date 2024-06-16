@@ -52,7 +52,7 @@ if (!empty($alerta)) {
                     <div class="form-group">
                         <label for="tipo">Tipo</label>
                         <select id="tipo" name="tipo" class="form-control" required>
-                            <option value="admin">Administrador</option>
+                            <option value="Administrador">Administrador</option>
                             <option value="vendedor">Vendedor</option>
                             <option value="Mecanico">Mecanico</option>
                             <option value="Gerente">Gerente</option>
